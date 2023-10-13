@@ -59,6 +59,7 @@ body{
     background-color: #F9FBFF;
     /* color: #FFFFFF; */
     color: black;
+    overflow-y: hidden;
 }
 
 .animate, .animate span {
@@ -158,7 +159,6 @@ body{
 }
 .header-info{
     height: 15rem;
-    display: flex;
     max-width: 40rem;
 }
 .footer-info{
@@ -188,6 +188,9 @@ body{
             0px 8px 16px rgba(0,0,0,0.1);
 }
 
-@media screen {
-    
+@media screen and (max-width: 450px), 
+       screen and (max-height: 795px) {
+        body{
+            overflow-y: scroll;
+        }
 }
